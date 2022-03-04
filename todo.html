@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To Do List</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            background-color: blue;
+            color: aliceblue;
+        }
+
+        div .container,
+        div #newtask,
+        div .task {
+            padding-left: 35%;
+        }
+
+        button {
+            height: 40px;
+            width: 100px;
+            border-radius: 1em;
+            font-size: larger;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: whitesmoke;
+        }
+
+        input {
+            width: 500px;
+            height: 40px;
+            border-radius: 1em;
+
+        }
+
+        button:active {
+            background: gray;
+        }
+
+        span {
+            font-size: 30px;
+
+        }
+    </style>
+</head>
+
+
+<body>
+    <div>
+        <h1>To Do Remainder</h1>
+    </div>
+    <div class="container">
+        <div id="newtask">
+            <input type="text" placeholder="Task Remainder...">
+            <button id="push">Add</button>
+        </div>
+
+        <div id="tasks"></div>
+    </div>
+
+    
+    <script>
+        document.querySelector('#push').onclick = function () {
+            if (document.querySelector('#newtask input').value.length == 0) {
+                alert("Please Enter a Task")
+            }
+            else {
+                document.querySelector('#tasks').innerHTML += ` 
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('#newtask input').value}
+                </span>
+                <button class="delete"> Delete                   
+                </button>
+            </div>     `}
+
+            var current_tasks = document.querySelectorAll(".delete");
+            for (var i = 0; i < current_tasks.length; i++) {
+                current_tasks[i].onclick = function () {
+                    this.parentNode.remove();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
