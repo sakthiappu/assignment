@@ -1,0 +1,113 @@
+html {
+    background: #ecf0f1;
+}
+
+body {
+    height: 1500px;
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    color: #27ae60;
+    font-family: roboto;
+    font-size: 18px;
+}
+
+.header {
+    height: 200px;
+    width: 100%;
+    background: #2c3e50;
+    float: left;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+    float: left;
+}
+
+.header h1 {
+    font-size: 45px;
+}
+
+.nav {
+    height: 50px;
+    float: left;
+    width: 100%;
+    background: #e74c3c;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 25px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav ul li a:hover,
+.lbox ul li a:hover {
+    text-decoration: overline;
+}
+
+.lbox {
+    width: 200px;
+    float: left;
+    height: 1200px;
+    background: #34495e;
+}
+
+.lbox ul li {
+    list-style-type: none;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.lbox ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.rbox {
+    width: 1000px;
+    float: left;
+    height: 1200px;
+}
+
+.footer {
+    height: 50px;
+    float: left;
+    width: 100%;
+    background: #e74c3c;
+}
+
+.rbox h3 {
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.rbox p {
+    padding: 20px;
+    color: #34495e;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    padding: 6px;
+}
+
+.img1 {
+    float: right;
+}
+
+.img2 {
+    float: left;
+}
